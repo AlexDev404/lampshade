@@ -35,4 +35,4 @@ jobs:
           git add .
           git commit -am "Publish Update"
           git fetch --all
-          git merge origin/main
+          git push origin main
