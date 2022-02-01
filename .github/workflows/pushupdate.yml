@@ -28,6 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Push Timestamp to File
         run: |
+          git config --global user.name 'AlexDev404'
+          git config --global user.email 'alexdev404@users.noreply.github.com'
+          git fetch
           date +%s >> update_ts
           git add .
           git commit -am "Publish Update"
